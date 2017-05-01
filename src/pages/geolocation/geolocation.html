@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Geolocation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>
+    Latitude: {{displayValues?.lat}}
+
+  </h2>
+  <h2>
+    Longitude: {{displayValues?.lon}}
+  </h2>
+
+
+  <div #map id="map" style="height:80%;"></div>
+
+</ion-content>

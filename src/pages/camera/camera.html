@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Camera demo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-slides style="height: 60vh">
+  <ion-slide *ngFor="let image of images">
+    <ion-card>
+      <img [src]="image"/>
+      {{image}}
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+
+  <button ion-button icon-left block (click)="takePhoto()">
+    <ion-icon name="camera"></ion-icon>
+    Save to gallery
+  </button>
+  <button ion-button icon-left block color="secondary" (click)="takePhoto(false)">
+    <ion-icon name="camera"></ion-icon>
+    Keep in memory
+  </button>
+
+  <button ion-button icon-left block color="dark">
+    <ion-icon name="camera"></ion-icon>
+    Save To data directory
+  </button>
+
+  <button ion-button icon-left block color="danger">
+    <ion-icon name="camera"></ion-icon>
+    To Secure Storage
+  </button>
+
+
+
+</ion-content>
