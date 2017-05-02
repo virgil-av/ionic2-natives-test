@@ -6,6 +6,7 @@
 6. all native elements need to be imported in app.module as providers
 7. Install Java
 8. Change detections only with ngZones
+9. Camera preview: https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview/issues/247 
 
 Native:
 - Camera allplat
