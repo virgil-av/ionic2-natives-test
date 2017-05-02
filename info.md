@@ -7,6 +7,7 @@
 7. Install Java
 8. Change detections only with ngZones
 9. Camera preview: https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview/issues/247 
+10. Tesserect: https://github.com/naptha/tesseract.js
 
 Native:
 - Camera allplat
