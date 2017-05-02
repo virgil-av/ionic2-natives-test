@@ -12,6 +12,9 @@ import {NetworkPage} from "../pages/network/network";
 import { Geolocation } from '@ionic-native/geolocation';
 import {GeolocationPage} from "../pages/geolocation/geolocation";
 import {GlobalizationPage} from "../pages/globalization/globalization";
+import {InAppCameraPage} from "../pages/inapp-camera/inapp-camera";
+import {TesseractPage} from "../pages/tesseract/tesseract";
+
 
 @Component({
   templateUrl: 'app.html'
@@ -38,7 +41,9 @@ export class MyApp {
       { title: 'Status bar', component: StatusBarPage },
       { title: 'Network', component: NetworkPage },
       { title: 'Geolocation', component: GeolocationPage },
-      { title: 'Globalization', component: GlobalizationPage }
+      { title: 'Globalization', component: GlobalizationPage },
+      { title: 'In app Camera', component: InAppCameraPage },
+      { title: 'Tesseract', component: TesseractPage }
 
     ];
 

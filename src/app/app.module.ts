@@ -32,6 +32,9 @@ import {
 } from '@ionic-native/google-maps';
 import {GlobalizationPage} from "../pages/globalization/globalization";
 import { Globalization } from '@ionic-native/globalization';
+import { CameraPreview } from '@ionic-native/camera-preview';
+import {InAppCameraPage} from "../pages/inapp-camera/inapp-camera";
+import {TesseractPage} from "../pages/tesseract/tesseract";
 
 
 
@@ -46,7 +49,9 @@ import { Globalization } from '@ionic-native/globalization';
     StatusBarPage,
     NetworkPage,
     GeolocationPage,
-    GlobalizationPage
+    GlobalizationPage,
+    InAppCameraPage,
+    TesseractPage
   ],
   imports: [
     BrowserModule,
@@ -63,7 +68,9 @@ import { Globalization } from '@ionic-native/globalization';
     StatusBarPage,
     NetworkPage,
     GeolocationPage,
-    GlobalizationPage
+    GlobalizationPage,
+    InAppCameraPage,
+    TesseractPage
   ],
   providers: [
     StatusBar,
@@ -76,6 +83,7 @@ import { Globalization } from '@ionic-native/globalization';
     Geolocation,
     GoogleMaps,
     Globalization,
+    CameraPreview,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
